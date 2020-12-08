@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: about.php
- * Description:
+ * Description: Add a Vacation
  */
 
 //display the page header
@@ -32,17 +32,17 @@ require_once 'includes/header.php';
         <div class="addvacations_background">
         <h2>Add New Vacation</h2>
         <form action="insertvacation.php" method="post">
-            <table cellspacing="0" cellpadding="3" style="border: 3px solid #3B506B; padding:5px; margin-top: 10px">
+            <table cellspacing="0" cellpadding="3" style="border: none; padding:5px; margin-top: 10px">
                 <tr>
-                    <td style="text-align: right; width: 100px">Product: </td>
+                    <td style="text-align: left; width: 100px; font-weight: 700; padding-left: 20px;">Product: </td>
                     <td><input name="product" type="text" size="100" required /></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">Location: </td>
+                    <td style="text-align: left; font-weight: 700; padding-left: 20px;">Location: </td>
                     <td><input name="location" type="text" size="40" required /></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">Type:</td>
+                    <td style="text-align: left;padding-left: 20px; font-weight: 700;">Type:</td>
                     <td>
                         <select name="type">
                             <option value="1">Family</option>
@@ -54,15 +54,15 @@ require_once 'includes/header.php';
                 </tr>
                 <tr>
                 <tr>
-                    <td style="text-align: right">Price: </td>
+                    <td style="text-align: left;padding-left: 20px; font-weight: 700">Price: </td>
                     <td><input name="price" type="number" step="0.01" required /></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right">Image: </td>
+                    <td style="text-align: left;padding-left: 20px; font-weight: 700">Image: </td>
                     <td><input name="image" type="text" size="100" required /></td>
                 </tr>
                 <tr>
-                    <td style="text-align: right; vertical-align: top">Description:</td>
+                    <td style="text-align: left;padding-left: 20px;font-weight: 700; vertical-align: top">Description:</td>
                     <td><textarea name="description" rows="6" cols="65"></textarea></td>
                 </tr>
             </table>
@@ -70,7 +70,7 @@ require_once 'includes/header.php';
 
             <div class="bookstore-button">
                 <input type="submit" value="Add " />
-                <input type="button" value="Cancel" onclick="window.location.href='hotspots.php'" />
+                <input type="submit" value="Cancel" onclick="window.location.href='hotspots.php'" />
             </div>
         </form>
     </div>
@@ -84,6 +84,6 @@ require_once 'includes/header.php';
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/16/2020
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
  * File: searchresults.php
- * Description:
+ * Description: Search Results
  */
 
 
@@ -29,6 +29,7 @@ $term = filter_input(INPUT_GET, 'q', FILTER_SANITIZE_STRING);
 $terms = explode(' ', $term);
 
 //select statement using the pattern search
+
 $sql = "SELECT vacation_id, product, location, type, price_per_person
         FROM $tblVacations 
         WHERE ";
@@ -75,7 +76,7 @@ if (!$query) {
     <h2>Search results for: <?= $term ?></h2>
     <?php
     if ($query->num_rows == 0) {
-        echo "Your search '$term' did not match any vacations in our inventory.";
+        echo "Your search '$term' did not match any rentals in our inventory.";
         exit();
     }
 
@@ -120,7 +121,7 @@ if (!$query) {
 ?>
 </body>
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>
 

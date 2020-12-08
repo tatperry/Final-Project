@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Farah Haddad
- * Date: 6/18/2020
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
  * File: login.php
- * Description:
+ * Description: Login logic
  */
 
 

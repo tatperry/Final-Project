@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
- * File: about.php
- * Description:
+ * Author: Kailey hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
+ * File: deletevaction.php
+ * Description:delete vacation logic
  */
 
 
@@ -97,9 +97,9 @@ if (!$row) {
 
     </div>
     <div class="bookstore-button">
-        <input type="button" onclick="window.location.href='updatevacation.php?id=<?= $id ?>'" value="Edit">
-        <input type="button" onclick="window.location.href='removevacation.php?id=<?= $id ?>'" value="Delete">
-        <input type="button" onclick="window.location.href='hotspots.php'" value="Cancel">
+        <input type="submit" onclick="window.location.href='updatevacation.php?id=<?= $id ?>'" value="Edit">
+        <input type="submit" onclick="window.location.href='removevacation.php?id=<?= $id ?>'" value="Delete">
+        <input type="submit" onclick="window.location.href='hotspots.php'" value="Cancel">
 
 
     </div>
@@ -112,6 +112,6 @@ if (!$row) {
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo2020. All Rights Reserved.</p>
 </div>
 </html>

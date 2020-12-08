@@ -1,7 +1,7 @@
 <?php
 /**
- * Author: Jada Ruffin
- * Date: 6/19/2020
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
  * File: finalcheckout.php
  * Description: Confirmation page after customer has clicked the checkout button
  */

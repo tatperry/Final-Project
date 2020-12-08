@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/16/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: error.php
- * Description:
+ * Description: Error search page
  */
 
 //display the page header
@@ -66,6 +66,6 @@ if (filter_has_var(INPUT_GET, "m")) {
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

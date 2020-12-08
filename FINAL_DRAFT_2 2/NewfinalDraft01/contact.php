@@ -1,10 +1,10 @@
 <?php
 /**
  *
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: contact.php
- * Description:
+ * Description: Contact Page
  */
 
 //display the page header
@@ -77,7 +77,7 @@ require_once 'includes/header.php';
                         style="height: 50px;"
                 ></textarea><br>
                 <!-- SUBMIT BUTTON -->
-                <input type="button" value="Submit" onclick="window.location.href = 'submitcontact.php'"/><br>
+                <input type="submit" value="Submit" onclick="window.location.href = 'submitcontact.php'"/><br>
 
             </form>
         </div>
@@ -99,6 +99,6 @@ require_once 'includes/header.php';
 ?>
 </body>
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

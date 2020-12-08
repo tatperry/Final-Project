@@ -1,7 +1,7 @@
 <?php
 /**
- * Author: Jada Ruffin
- * Date: 6/19/2020
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
  * File: vacationshowcart.php
  * Description:
  */
@@ -25,7 +25,7 @@ require_once('includes/database.php');
 
 <!-- Main Content Area -->
 <section id="maincontent">
-    <div class="container">
+    <div class="container-cart">
         <h2> My Shopping Cart</h2>
         <!--  display shopping cart content -->
         <div class="travellist">
@@ -71,20 +71,21 @@ require_once('includes/database.php');
         </div>
 
 
-</section>
+
 
 
 <div class="bookstore-button">
-    <input type="button" value="Checkout" onclick="window.location.href = 'finalcheckout.php'"/>
-    <input type="button" value="Cancel" onclick="window.location.href = 'hotspots.php'"/>
+    <input type="submit" value="Checkout" onclick="window.location.href = 'finalcheckout.php'"/>
+    <input type="submit" value="Cancel" onclick="window.location.href = 'hotspots.php'"/>
 </div>
-<br><br>
-<body>
+</section>
 
 
-</body>
+
+
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
+</body>
 </html>

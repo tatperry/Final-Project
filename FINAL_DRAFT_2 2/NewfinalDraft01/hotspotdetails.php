@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: hotspotdetails.php
- * Description:
+ * Description: The details of the rental home
  */
 
 //display the page header
@@ -76,18 +76,21 @@ if (isset($_SESSION['role'])) {
 <!-- Main Content Area -->
 <section id="maincontent">
 
-        <h2> Vacation</h2>
-        <div class="vdetails">
+        <h2 class="hotspots-title"> Rental Home</h2>
+
+    <div class="vdetails">
 
             <div class="cover">
-                <img src="images/<?= $row['image'] ?>">
+                <a class="go-back"  href="hotspots.php"> <button>Go Back</button></a>
+                <img src="<?= $row['image'] ?>">
             </div>
             <!-- Vacation Attributes -->
+            <div class="middle-row">
             <div class="label">
                 <div>Product:</div>
                 <div>Location:</div>
                 <div>Type:</div>
-                <div>Price Per Person:</div>
+                <div>Price Per Night:</div>
                 <div>Description:</div>
             </div>
 
@@ -96,13 +99,15 @@ if (isset($_SESSION['role'])) {
                 <div><?= $row['product'] ?></div>
                 <div><?= $row['location'] ?></div>
                 <div><?= $row['type'] ?></div>
-                <div><?= $row['price_per_person'] ?></div>
+                <div><?= $row['price_per_person'] ?>$</div>
                 <div><?= $row['description'] ?></div>
 
             </div>
-            <div>
+            </div>
+            <div class="hotspotdetailcart" >
 
-                <a href="addtocart.php?id=<?= $id ?>"><img src="images/addtocart_button.png"></a>
+                <a href="addtocart.php?id=<?= $id ?>"> <img src="images/<?= $shoppingcart_img ?>" style='width: 35px; border: none'>
+                    <div>Add to Cart</div></a>
 
             </div>
         </div>
@@ -143,6 +148,6 @@ if (isset($_SESSION['role'])) {
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

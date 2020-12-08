@@ -1,13 +1,10 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Tatiana Perry, Kailey Hart, Lauren Fasig.
+ * Date:11/17/2020
  * File: about.php
- * Description:
+ * Description: About VrGo
  */
-
-
-
 
 
 //display the page header
@@ -29,7 +26,7 @@ require_once 'includes/header.php';
 <!-- Main Content Area -->
 <section id="maincontent">
     <div class="Container-about">
-        <h1>About Us</h1>
+        <h2>About VrGo</h2>
 
     </div>
 
@@ -40,28 +37,53 @@ require_once 'includes/header.php';
 
             <div class="statements">
                 <div class="bullet-points">
-                    <h2 class="title">Personal Touch Travel Agency</h2>
-                    <br>
+
                     <h3 class="title">OUR MISSION:</h3>
                     <br>
-                    <p class="para">- Is to sell cheapest airline tickets in an increasingly competitive market</p>
+                    <ul>
+                        <li>
+                            • Is to rent out the most affordable rentals in an increasingly competitive
+                                market
+                        </li>
+                        <br>
+                        <li>
+                            •  To assemble the most advanced team of rental experts in the world
+                        </li>
+                        <br>
+                        <li>
+                            •  To maintain an efficient and technologically bullet-proof platform
+                        </li>
+                        <br>
+                        <li>
+                            •  Innovate, don’t imitate.
+                        </li>
+                    </ul>
                     <br>
-                    <p class="para"> - To assemble the most advanced team of travel experts in the world</p>
                     <br>
-                    <p class="para">- To maintain an efficient and technologically bullet-proof platform</p>
-                    <p>- Innovate, don’t imitate.</p>
-                    <br>
-                    <br>
-                    <h3 class="title">OUR VALUES:</h3>
-                    <br>
-                    <p class="para">- PASSION - being travelers ourselves, we understand the needs of people on the go or families looking for a peaceful and safe getaway for their summer vacation.</p>
-                    <br>
-                    <p class="para">- INNOVATION - To lead the industry in technology advances and push boundaries that give us an edge over all other online agencies.</p>
-                    <br>
-                    <p class="para">- EXECUTION - The courage to lead the way in a technologically stagnant industry. Pushing boundaries and taking chances.</p>
-                    <br>
-                    <p class="para">- DEDICATION - Doing what we do with passion and integrity. We believe our work ethic speaks for itself. </p>
-                    <br>
+                    <ul>
+                        <h3 class="title">OUR VALUES:</h3>
+
+                        <li>
+                            <strong> PASSION</strong> - being renters ourselves, we understand the needs of people looking for a home away from home.
+                        </li>
+                        <br>
+                        <li>
+                            <strong> INNOVATION</strong> - To lead the industry in technology advances and push
+                                boundaries that give us an edge over all other online rental agencies.
+
+                        </li>
+                        <br>
+                        <li>
+                            <strong>EXECUTION </strong>- The courage to lead the way in a technologically stagnant
+                                industry. Pushing boundaries and taking chances.
+                        </li>
+                        <br>
+                        <li>
+                            <strong>
+                                DEDICATION</strong> - Doing what we do with passion and integrity. We believe our
+                                work ethic speaks for itself.
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -74,8 +96,6 @@ require_once 'includes/header.php';
         <br>
 
 
-
-
 </section>
 
 <?php
@@ -84,6 +104,6 @@ require_once 'includes/header.php';
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

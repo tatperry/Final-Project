@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Tatiana Perry, Kailey Hart, 
+ * Date: 11/17/2020
  * File: index.php
- * Description:
+ * Description: Home Page
  */
 
 //display the page header
@@ -26,7 +26,7 @@ require_once 'includes/header.php';
 <!-- Main Content Area -->
 <section id="maincontent">
     <div class="container">
-        <h1>Explore a new world with Personal Touch Travel</h1>
+        <h1>Explore a new world <br> with VrGo</h1>
         <!-- Replace this code with some meaningful text about the travel agency -->
         <p>When you're ready to getaway, we're ready to inspire you.</p>
     </div>
@@ -38,27 +38,27 @@ require_once 'includes/header.php';
 
             <div class="top-picks">
                 <!-- Adventure Top Pick box -->
-                <div class="box">
-                    <img class="resize" src="images/adventure.jpg" style="border: 2px solid #3B506B">
+                <div class="box" >
+                    <div class="resize-adventure"  style="border: 2px solid #3B506B"></div>
                     <h3>Adventure</h3>
                 </div>
 
                 <!-- Family Top Pick box -->
-                <div class="box">
-                    <img class="resize" src="images/family.jpg" style="border: 2px solid #3B506B">
+                <div class="box" >
+                    <div  class="resize-family" style="border: 2px solid #3B506B"></div>
                     <h3>Family</h3>
                 </div>
 
                 <!-- Romantic Top Pick box -->
                 <div class="box">
-                    <img class="resize" src="images/romantic.jpg" style="border: 2px solid #3B506B">
+                    <div  class="resize-romantic"  style="border: 2px solid #3B506B"> </div>
                     <h3>Romantic</h3>
                 </div>
 
                 <!-- Relaxation Top Pick box -->
-                <div class="box">
-                    <img class="resize" src="images/relaxing.jpg" style="border: 2px solid #3B506B">
-                    <h3>Relaxation</h3>
+                <div class="box" >
+                    <div  class="resize-friends" style="border: 2px solid #3B506B"> </div>
+                    <h3>Friends</h3>
                 </div>
             </div>
 
@@ -70,6 +70,6 @@ require_once 'includes/header.php';
 
 <!--footer -->
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

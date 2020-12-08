@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: addtocart.php
- * Description: adding books into the cart
+ * Description: adding rentals into the cart
  */
 
 

@@ -13,13 +13,14 @@
 
 /* properties for the body area and full screen background image */
 body {
-  background-image: url("../images/1.jpg");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../images/houses.jpg");
   max-width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #F2F0F0;
+  padding-bottom: 300px;
+
 
   font:15px/normal Arial, Helvetica, serif;
 
@@ -36,12 +37,13 @@ body {
 
 #banner {
 
-  padding: 5px;
+  background-color: whitesmoke;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
+  align-items: center;
 }
 
 #banner img {
@@ -49,16 +51,32 @@ body {
   border: none;
 }
 
-#banner .logo {
-  height: 110px;
-  width: 110px;
+
+#banner #nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-#banner .logo > img {
-  margin-left: -300px;
-  height: 110px;
-  width: 110px;
-  padding: 0px 0px 10px 0px;
+header #navbar {
+  padding-right: 40px;
+}
+
+header #navbar a {
+   font-family: 'Noto Sans','Helvetica', sans-serif;
+  margin-right: 10px;
+  color: #245abc;
+  padding: 9px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header #navbar a:hover {
+  transition: ease-in-out .3s;
+  border-radius: 5px;
+
+  background-color: #Fefefe;
+
 }
 
 #banner .banner-text {
@@ -68,25 +86,17 @@ body {
   justify-content: center;
 }
 
-#maintitle {
-  margin-left: -250px;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-}
+
 
 
 /* All UL's will have this margin/padding by default*/
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 
 /*Header Details*/
 header {
   background: #f2f0f0;
   color: #3B506B;
-  padding-top: 30px;
+
   min-height: 70px;
   border-bottom: #1D2541  3px solid;
 }
@@ -116,11 +126,7 @@ header #branding h1 {
   margin: 0;
 }
 
-header .navbar {
-  padding: 50px 0px 0px 0px;
-  float: right;
-  margin-top: 50px;
-}
+
 
 header a:hover {
   color: #1D2541;
@@ -132,15 +138,29 @@ header a:hover {
   min-height: 400px;
   text-align: center;
   color: #FFF;
+
 }
 #maincontent h1 {
   margin-top: 150px;
-  font-size: 45px;
+  font-size: 55px;
   margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
 }
+
+#maincontent p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+}
+
+
 
 /*Top Pick Boxes Details */
 .top-picks {
+  border-radius: 10px;
+  background-color: #fff;
   margin-top: 125px;
 display: flex;
 flex-direction: row;
@@ -151,8 +171,10 @@ padding: 5px;
 
 #box{
   padding-top: 20px;
+  padding-top: 20px;
   margin-top: 20px;
   display: flex;
+
 }
 
 #boxes .box {
@@ -161,24 +183,82 @@ padding: 5px;
   height: 20%;
   padding: 10px;
   text-align: center;
+
 }
 #boxes .box h3 {
   margin-top: 10px;
+  color: #000;
+  text-align: center;
 
 }
 
 /* Top Pick Image Resizing */
-.resize {
+.resize-family {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
   width: 200px;
   height: 150px;
-  margin-top: 10px;
+
+  background-image: url('../images/family2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.resize-friends {
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('../images/friends2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.resize-adventure {
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('../images/adventure2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.resize-romantic{
+  border-radius: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('../images/romantic2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 /* Styles for Contact page */
+.contact h2 {
+  margin-top: 50px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
+}
+
+label {
+  font-size: 18px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+  color: royalblue;
+}
 
 input[type="text"],
 select,
 textarea {
+  font-size: 14px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
   width: 80%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
@@ -193,6 +273,8 @@ textarea {
 input[type="password"],
 select,
 textarea {
+  font-size: 14px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
   width: 80%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
@@ -205,11 +287,14 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #3B506B;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  font-weight: 700;
+  background-color: royalblue;
+  color: #fff;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid royalblue;
   cursor: pointer;
   left: 50%;
   align-items: center;
@@ -218,7 +303,9 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #3B506B;
+  background-color: transparent;
+  color: royalblue;
+
 }
 
 /* Contact Title */
@@ -244,21 +331,45 @@ input[type="submit"]:hover {
 
 /* About Header */
 .Container-about{
+  margin-top: 10px;
   margin-bottom: 16px;
 }
+.Container-about h2{
+  margin-top: 50px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
+
+}
+
 /* White Box */
-.statements{
+.statements {
+  margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1200px;
   min-height: 300px;
   background-color: #ffffff;
-  margin-bottom: 16px;
-  border: 2px solid #3B506B
+
+  border-radius: 10px;
 }
+ul > li {
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+  font-size: 18px;
+  list-style-type: circle;
+  display: inline;
+  text-align: left;
+  margin-left: 20px;
+}
+
 /* Statements/ Missions */
 .bullet-points {
-  padding: 15px;
+  text-align: left;
   color: #3B506B;
   font-size: 15px;
   font-weight: lighter;
+
 }
 
 /* styling for the headers and paragraph */
@@ -266,8 +377,10 @@ input[type="submit"]:hover {
 /* styles for headers/ about page */
 .title{
   color: #3B506B;
-  font-size: 15px;
+  font-size: 25px;
+word-spacing: 10px;
   font-weight: lighter;
+  font-family: 'Monoton', "Helvetica", cursive;
 }
 /* styling for paragraph in about section */
 .para{
@@ -305,22 +418,27 @@ input[type="submit"]:hover {
     min-height: 32px;
 }
 /*Hot spots title */
-.hotspots-title h1 {
-  text-align: right;
-  margin-right: 50px;
-
+.hotspots-title  {
+  margin-top: 50px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
 
 }
 
-header #navbar {
-  margin-bottom: -100px;
-  float: right;
-  margin-top: 30px;
-}
+
 
 
 /* styles of the book list table */
 .travellist {
+
+  text-align: left;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   background-color: #FFF;
@@ -340,14 +458,29 @@ header #navbar {
 }
 
 .travellist .header {
-  background-color: #e4f1fe;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: royalblue;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   font-weight: 600;
+  color: #fff;
 }
 
 .travellist .col1 {
   width: 300px;
+  padding-left: 20px;
+}
+
+.travellist a {
+ text-decoration: none;
+  color: royalblue;
+  font-weight: 700;
+}
+.travellist a:hover {
+  text-decoration: underline;
 }
 
 .travellist .col2 {
@@ -359,6 +492,7 @@ header #navbar {
 }
 
 .travellist .col4 {
+  width: 200px;
 
 }
 
@@ -367,43 +501,91 @@ header #navbar {
 
 /* styles of vacation details table */
 .vdetails {
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  margin-top: 200px;
-  margin-right: 350px;
+  justify-content: space-between;
+border-radius: 10px;
   background-color: #FFFFFF;
   color: #3B506B;
 }
 
-.vdetails img {
-  width: 400px;
+.vdetails .cover img {
+  max-height: 400px;
   margin-right: 20px;
+  border-radius: 5px;
 }
-.vdetails .cover {
-  min-width: 200px;
+.vdetails .middle-row {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
 .vdetails .label div {
-  width: 100px;
+  padding-top: 20px;
+  font-size: 18px;
+  padding-right: 30px;
+  max-width: 150px;
   font-weight: 600;
   height: 32px;
+  text-align: left;
+  color: royalblue;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+
 }
 
 .vdetails .content div {
+  padding-top: 20px;
+  font-size: 14px;
+  color: #000;
+  max-width: 300px;
   min-height: 32px;
+  text-align: left;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+
+}
+
+.go-back {
+
+  margin: 0 auto;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.go-back button {
+  font-weight: 700;
+  background-color: royalblue;
+  color: #fff;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid royalblue;
+}
+
+.go-back button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: royalblue;
 }
 
 
 /*styles for action buttons */
 .bookstore-button {
   border-top: 1px solid #CCCCCC;
-  margin: 50px auto 20px auto;
-  padding-top: 10px;
+
+  padding-top: 50px;
   text-align: center;
 }
 
-.bookstore-button input{
-  width: 75px;
+.bookstore-button input:hover{
+  background-color: #fff;
+  color: royalblue;
+
 }
 
 .bookstore-button.delete-confirmed {
@@ -423,24 +605,51 @@ header #navbar {
 
 .addvacations_background {
   background-color: #FFF;
-  color: #3B506B;
+  color: royalblue;
+  margin-top: 50px;
+}
+.addvacations_background table {
+  margin: 0 auto;
+  border: none;
+}
 
+.addvacations_background h2 {
+  color: royalblue;
+  font-size: 35px;
+  word-spacing: 10px;
+  font-weight: lighter;
+  font-family: 'Monoton', "Helvetica", cursive;
 }
 
 /*Styling for the search bar */
-.search {
+.Search {
   padding-top: 50px;
+}
+
+.Search p {
+ font-size: 18px;
+  text-align: center;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+
+}
+
+.Search input[type="submit"]:hover {
+  background-color: #fff;
 }
 
 
 /*Styling for loginform file */
 /* Login Page Title */
 .login h2{
-  padding-top: 15px;
+color: #fff;
   text-align: center;
-  margin: 15px;
-  font-size: 50px;
-  color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
 }
 
 /* Add a background color and some padding around the form */
@@ -460,8 +669,7 @@ header #navbar {
 
 /* styles of the shopping card */
 .shoppingcart {
-  padding: 50px;
-  margin-right: -300px;
+  background-color: whitesmoke;
   width: 150px;
   display: flex;
   flex-direction: column;
@@ -470,28 +678,78 @@ header #navbar {
 
 }
 
-.shoppingcart > a {
-  color: white;
+.hotspotdetailcart {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: center;
+
+}
+
+.hotspotdetailcart > a {
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  color: #245abc;
   font-weight: bold;
   text-decoration: none;
-  background-color: #3B506B;
+  background-color: #fcfcfc;
   width: 90px;
   height: 70px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+}
+
+.shoppingcart > a {
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  color: #245abc;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #fcfcfc;
+  width: 90px;
+  height: 70px;
+  padding-top: 5px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+
+}
+
+.shoppingcart >a > div {
+  font-size: 14px;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+}
+
+.container-cart h2 {
+
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: 'Monoton', "Helvetica", cursive;
+  letter-spacing: 3px;
+  word-spacing: 25px;
 }
 
 
 
-/*Footer Details */
+
+
+  /*Footer Details */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    padding: 15px;
+    padding-top: 20px;
     width: 100%;
     background-color: #f2f0f0 ;
-    color: #5BC1BE;
+    color: royalblue;
     text-align: center;
+  font-family: 'Noto Sans','Helvetica', sans-serif;
+
 }
 
 

@@ -69,7 +69,7 @@ if ($query->num_rows == 0) {
 
 
             <div class="row">
-                <div class="col1"><a href="hotspots.html?id=<?= $row['id'] ?>"><?= $row['product'] ?></a></div>
+                <div class="col1"><a href="hotspots.php?id=<?= $row['id'] ?>"><?= $row['product'] ?></a></div>
                 <div class="col2"><?= $row ['type'] ?></div>
                 <div class="col3"><?= $row ['price_per_person'] ?></div>
             </div>

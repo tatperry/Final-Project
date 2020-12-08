@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Farah Haddad
- * Date: 6/18/2020
+ * Author: Kailey Hart, Tatiana Perry, Lauren Fasig
+ * Date: 11/17/2020
  * File: register.php
- * Description:
+ * Description: Register Page Logic
  */
 
 //Do not proceed if there are no post data

@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
- * File: about.php
- * Description:
+ * Author: Kailey hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
+ * File: removevaction.php
+ * Description:Remove vacation logic
  */
 
 //display the page header
@@ -99,9 +99,9 @@ echo "<p> The vacation has been successfully deleted from the database.";
 
             </div>
             <div class="bookstore-button">
-                <input type="button" onclick="window.location.href='editvacation.php?id=<?= $id ?>'" value="Edit">
-                <input type="button" onclick="window.location.href='deletevacation.php?id=<?= $id ?>'" value="Delete">
-                <input type="button" onclick="window.location.href='hotspots.php'" value="Cancel">
+                <input type="submit" onclick="window.location.href='editvacation.php?id=<?= $id ?>'" value="Edit">
+                <input type="submit" onclick="window.location.href='deletevacation.php?id=<?= $id ?>'" value="Delete">
+                <input type="submit" onclick="window.location.href='hotspots.php'" value="Cancel">
 
 
             </div>
@@ -118,6 +118,6 @@ echo "<p> The vacation has been successfully deleted from the database.";
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

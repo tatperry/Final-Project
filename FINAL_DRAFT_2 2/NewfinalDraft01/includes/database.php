@@ -2,7 +2,7 @@
 <?php
 
 /**
- * Author: Jada Ruffin, Matt McGee, , ,
+ * Author: Tatiana Perry, Kailey Hart, Lauren Fasig
  * File: database.php
  * Description: Connect to the MYSQL Server
  */
@@ -10,7 +10,7 @@
 //Define Parameters
 $host = "localhost";
 $login = "phpuser";
-$password = "phpuser";
+$password = "XZ7ro4kMGgeGXS9J";
 $database = "travel_db";
 $tblCustomer = "customer";
 $tblOrderinfo = "orderinfo";

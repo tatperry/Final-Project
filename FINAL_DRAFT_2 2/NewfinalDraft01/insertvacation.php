@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
- * File: about.php
- * Description:
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date:11/17/2020
+ * File: insertvacation.php
+ * Description: vaction logic
  */
 
 
@@ -97,6 +97,6 @@ header("Location:hotspotdetails.php?id=$id&m=insert");
 </body>
 
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Jada Ruffin, tatiana P., Matthew M., Farah H.
- * Date: 6/15/2020
+ * Author: Tatiana Perry, Lauren Fasig, Kailey Hart
+ * Date: 11/17/2020
  * File: hotspots.php
- * Description:
+ * Description: Rentals
  */
 
 //display the page header
@@ -51,7 +51,7 @@ if (!$query) {
 <section id="maincontent">
 
     <div class="container">
-        <h2>Vacations</h2>
+        <h2 class="hotspots-title">Rentals</h2>
         <div class="travellist">
             <div class="row header">
                 <div class="col1">Product</div>
@@ -73,7 +73,7 @@ if (!$query) {
                                 href="hotspotdetails.php?id=<?= $row['vacation_id'] ?>"><?= $row['product'] ?></a></div>
                     <div class="col2"><?= $row['location'] ?></div>
                     <div class="col3"><?= $row['type'] ?></div>
-                    <div class="col4"><?= $row['price_per_person'] ?></div>
+                    <div class="col4"><?= $row['price_per_person'] ?>$</div>
                 </div>
 
 
@@ -95,6 +95,6 @@ if (!$query) {
 
 </body>
 <div class="footer">
-    <p>&copy; Personal Touch Travel Agency2020. All Rights Reserved.</p>
+    <p>&copy;VrGo 2020. All Rights Reserved.</p>
 </div>
 </html>

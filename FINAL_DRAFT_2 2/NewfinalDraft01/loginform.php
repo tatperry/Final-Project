@@ -1,9 +1,9 @@
 <?php
 /**
- * Author: Farah Haddad
- * Date: 6/18/2020
+ * Author: Kailey Hart, Lauren Fasig, Tatiana Perry
+ * Date: 11/17/2020
  * File: loginform.php
- * Description:
+ * Description: Login Page & Register Page
  * 1 -- last login attempt success
  * 2 -- last login attempt failed
  * 3 -- user just registered. Logged in automatically.
