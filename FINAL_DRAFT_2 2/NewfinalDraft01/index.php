@@ -1,6 +1,6 @@
 <?php
 /**
- * Author: Tatiana Perry, Kailey Hart, 
+ * Author: Tatiana Perry, Kailey Hart,
  * Date: 11/17/2020
  * File: index.php
  * Description: Home Page
