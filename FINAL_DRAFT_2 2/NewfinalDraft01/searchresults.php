@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 
-require_once 'database.php';
+require_once 'includes/database.php';
 
 //retrieve search term
 //error handling
@@ -21,9 +21,8 @@ $terms = explode( ' ', $term);
 
 //select statement using patterns search
 $sql = "SELECT *
-        FROM $travel_db.sql
-        WHERE $travel_db.vacation_id  AND ";
-//$tblVacations
+        FROM $tblVacations
+        WHERE $tblVacations.vacation_id  AND ";
 foreach ( $terms as $t) {
         $sql .= "title LIKE '%$t%' AND ";
 }
@@ -50,7 +49,7 @@ if (!$query) {
 <?php
 if ($query->num_rows == 0) {
     echo "Your Search '$term' did not match any vacations in our inventory.";
-    include '../hotspots.php';
+    include 'hotspots.php';
     exit();
 }
 
@@ -70,7 +69,7 @@ if ($query->num_rows == 0) {
 
 
             <div class="row">
-                <div class="col1"><a href="../hotspots.php?id=<?= $row['id'] ?>"><?= $row['product'] ?></a></div>
+                <div class="col1"><a href="hotspots.php?id=<?= $row['id'] ?>"><?= $row['product'] ?></a></div>
                 <div class="col2"><?= $row ['type'] ?></div>
                 <div class="col3"><?= $row ['price_per_person'] ?></div>
             </div>
